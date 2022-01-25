@@ -1,0 +1,52 @@
+body {
+  margin: auto;
+  width: 1200px;
+}
+
+#letterhead_container {
+  padding: 5%;
+  margin: 5%;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid red;
+}
+
+#header_left_div {
+  width: 150px;
+}
+#header_left_div > img {
+  width: 100%;
+}
+
+#header_right_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#header_right_div > div > h3 {
+  margin: 2px;
+}
+
+#download_btn_container {
+  width: 100%;
+  text-align: right;
+  margin: 40px 0;
+}
+
+#download_btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: #337bb6;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#download_btn:hover {
+  background-color: #163e5f;
+}
