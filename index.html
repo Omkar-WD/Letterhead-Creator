@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"
-      integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
@@ -27,12 +27,10 @@
 
 <script type="module">
   import header from "./components/header.js";
-  document.querySelector("#header").innerHTML = header();
+  import footer from "./components/footer.js";
 
-  document.querySelector("#download_btn").addEventListener("click", () => {
-    const invoice = document.querySelector("#header");
-    html2pdf(invoice);
-  });
+  document.querySelector("#header").innerHTML = header();
+  document.querySelector("#footer").innerHTML = footer();
 </script>
 
 <script src="./scripts/index.js"></script>
