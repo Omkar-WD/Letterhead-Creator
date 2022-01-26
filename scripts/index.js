@@ -1,17 +1,19 @@
 window.addEventListener("load", function () {
+  let { addressline1, addressline2, city, state, country, zip } = JSON.parse(
+    localStorage.getItem("currentUserData")
+  );
   document.querySelector("#header_left_div>img").src = "../images/logo.jpeg";
   document.querySelector("#header_right_div_address_line1>h3").textContent =
-    "Flat No - 505" + " ,";
+    addressline1 + " ,";
   document.querySelector("#header_right_div_apartment>h3").textContent =
-    "Gajanan Sankul Society" + " ,";
-  document.querySelector("#header_right_div_city>h3").textContent =
-    "Thane" + " ,";
+    addressline2 + " ,";
+  document.querySelector("#header_right_div_city>h3").textContent = city + " ,";
   document.querySelector("#header_right_div_state>h3").textContent =
-    "Maharashtra" + " ,";
+    state + " ,";
   document.querySelector("#header_right_div_country>h3").textContent =
-    "India" + " ,";
+    country + " ,";
   document.querySelector("#header_right_div_zipcode>h3").textContent =
-    "421302" + ".";
+    zip + ".";
 
   document.querySelector("#download_btn").addEventListener("click", () => {
     let options = {
