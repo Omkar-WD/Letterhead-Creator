@@ -1,5 +1,6 @@
 body {
   background-color: #cccccc;
+  margin: 0;
 }
 #download_btn_container {
   width: 794px;
@@ -23,8 +24,9 @@ body {
 #letterhead_container {
   background-color: white;
   width: 794px;
-  height: 1122px;
-  margin: auto;
+  padding-bottom: 10px;
+  /* height: 1122px; */
+  margin: 20px auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* border: 2px solid rgb(2, 68, 54); */
 }
@@ -33,7 +35,7 @@ body {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 10px;
   border-bottom: 2px solid rgb(2, 68, 54);
   height: 150px;
 }
@@ -56,12 +58,25 @@ body {
 
 #header_right_div > div > h3 {
   margin: 2px;
+  font-size: 18px;
 }
 
 #content {
-  height: 900px;
+  height: 870px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+  font-size: 50px;
 }
+
+#content > h1 {
+  transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  -webkit-transform: rotate(-40deg);
+}
+
 #footer {
   color: white;
   background-color: rgb(2, 68, 54);
