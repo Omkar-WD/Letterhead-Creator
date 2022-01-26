@@ -9,6 +9,7 @@ form.addEventListener("submit", (e) => {
     state: form.header_input_form_address_state.value,
     country: form.header_input_form_address_country.value,
     zip: form.header_input_form_address_zip.value,
+    img: form.header_input_form_address_image.value,
   };
   // letterheadData.push(formobj);
   localStorage.setItem("currentUserData", JSON.stringify(formobj));
