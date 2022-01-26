@@ -63,6 +63,11 @@ body {
 .header-input-form-submit:hover {
   background-color: rgb(17, 197, 158);
 }
+#header_input_form_address_image {
+  border: none !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
