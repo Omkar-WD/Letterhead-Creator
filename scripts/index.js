@@ -1,8 +1,7 @@
 window.addEventListener("load", function () {
-  let { addressline1, addressline2, city, state, country, zip } = JSON.parse(
-    localStorage.getItem("currentUserData")
-  );
-  document.querySelector("#header_left_div>img").src = "../images/logo.jpeg";
+  let { addressline1, addressline2, city, state, country, zip, img } =
+    JSON.parse(localStorage.getItem("currentUserData"));
+  document.querySelector("#header_left_div>img").src = img;
   document.querySelector("#header_right_div_address_line1>h3").textContent =
     addressline1 + " ,";
   document.querySelector("#header_right_div_apartment>h3").textContent =
@@ -16,6 +15,11 @@ window.addEventListener("load", function () {
     zip + ".";
 
   document.querySelector("#download_btn").addEventListener("click", () => {
+    let letterheadData =
+      JSON.parse(localStorage.getItem("letterheadData")) || [];
+    let currentUserData = JSON.parse(localStorage.getItem("currentUserData"));
+    letterheadData.push(currentUserData);
+    localStorage.setItem("letterheadData", JSON.stringify(letterheadData));
     let options = {
       margin: 0,
       filename: "letterhead.pdf",

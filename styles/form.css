@@ -31,7 +31,6 @@ body {
 
 #header_input_form_table td,
 #header_input_form_table th {
-  /* border: 1px solid #ddd; */
   padding: 8px;
   margin-bottom: 20px;
 }
@@ -57,7 +56,6 @@ body {
   font-weight: bolder;
   cursor: pointer;
   border-radius: 10px;
-  /* border: none; */
 }
 
 .header-input-form-submit:hover {
@@ -66,7 +64,7 @@ body {
 #header_input_form_address_image {
   border: none !important;
   padding: 0 !important;
-  text-align: left !important;
+  text-align: center !important;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -74,4 +72,8 @@ input[type="number"]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
   margin: 0;
+}
+
+.middle {
+  text-align: center !important;
 }
