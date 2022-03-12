@@ -1,0 +1,83 @@
+body {
+  background-color: #cccccc;
+  margin: 0;
+}
+#download_btn_container {
+  width: 794px;
+  text-align: right;
+  margin: 40px auto;
+}
+
+#download_btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(2, 68, 54);
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#download_btn:hover {
+  background-color: #163e5f;
+}
+
+#letterhead_container {
+  background-color: white;
+  width: 794px;
+  padding-bottom: 10px;
+  /* height: 1122px; */
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* border: 2px solid rgb(2, 68, 54); */
+}
+
+#header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px solid rgb(2, 68, 54);
+  height: 150px;
+}
+
+#header_left_div {
+  background-color: white;
+  width: 150px;
+  margin: auto 0;
+}
+#header_left_div > img {
+  width: 100%;
+}
+
+#header_right_div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#header_right_div > div > h3 {
+  margin: 2px;
+  font-size: 18px;
+}
+
+#content {
+  height: 870px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+  font-size: 50px;
+}
+
+#content > h1 {
+  transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  -webkit-transform: rotate(-40deg);
+}
+
+#footer {
+  color: white;
+  background-color: rgb(2, 68, 54);
+}

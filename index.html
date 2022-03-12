@@ -5,6 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div id="download_btn_container">
+      <button id="download_btn">Download</button>
+    </div>
+    <div id="letterhead_container">
+      <div id="header"></div>
+      <div id="content">
+        <h1>Confidential</h1>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
 </html>
+
+<script type="module">
+  import header from "./components/header.js";
+  import footer from "./components/footer.js";
+
+  document.querySelector("#header").innerHTML = header();
+  document.querySelector("#footer").innerHTML = footer();
+</script>
+
+<script src="./scripts/index.js"></script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Testing File Upload</title>
+    <script src="myscripts.js"></script>
+  </head>
+  <body>
+    <input id="file-upload" type="file" accept=".gif,.jpg,.jpeg,.png" />
+    <img id="myImg" src="" alt="" />
+  </body>
+</html>
+<script>
+  window.addEventListener("load", function () {
+    document.getElementById("file-upload").onchange = function (event) {
+      var reader = new FileReader();
+      reader.readAsDataURL(event.srcElement.files[0]);
+      var me = this;
+      reader.onload = function () {
+        var fileContent = reader.result;
+        document.querySelector("#myImg").setAttribute("src", fileContent);
+        console.log(fileContent);
+      };
+    };
+  });
+</script>
